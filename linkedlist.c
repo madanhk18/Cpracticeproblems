@@ -1,23 +1,29 @@
 #include<stdio.h>
 #include<stdlib.h>
-
-struct node{
+struct node 
+{
     int data;
-    struct node * link;
+    struct node *link;
+
 };
-
-getnode()
+int main()
 {
-    struct node *temp;
-    temp=(struct node *)malloc(sizeof(struct node));
-    temp->link =NULL;
-    printf("ENter the data value : \n");
-    scanf("%d",&temp->data);
-}
-insert_front()
-{
-    temp=getnode();
-    struct node *ptr;
-    ptr->link =NULL;
+struct node *head=NULL;
+head=(struct node *)malloc(sizeof(struct node));
+printf("Enter the data \n");
+scanf("%d",&head->data);
+head->link=NULL;
+
+struct node *cur=NULL;
+cur=(struct node *)malloc(sizeof(struct node));
+printf("Enter the data \n");
+scanf("%d",&cur->data);
+cur->link=NULL;
+
+printf("%d \n",head->data);
+printf("%d",cur->data);
+
+return 0;
 
 }
+
