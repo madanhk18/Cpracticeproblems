@@ -1,15 +1,22 @@
 #include<stdio.h>
-int main(){
-    float radius;
-    float area;
-    printf("Enter the radius of the circle: \n ");
-    scanf("%f",&radius);
+#include<stdlib.h>
+#include<sys/wait.h>
+#include<sys/types.h>
+#include<unistd.h>
 
-        area = 3.14 * radius * radius;
-
-    printf("Therefore the Area of the given circle is %f:",area);
-
-    
-     
-
+int main()
+{
+    pid_t child_pid;
+    child_pid=fork();
+    if(child_pid<0)
+    {
+        perror("Fork failed");
+        exit(EXIT_FAILURE);
+    }
+    else{
+        wait(NULL);
+        printf(" \n Parent process (PID%d) is executing ...",getpid());
+        printf("\n Child process (PID%d) is executing ...",child_pid);
+    }
+    return 0;
 }
