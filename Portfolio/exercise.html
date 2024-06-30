@@ -5,10 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise</title>
 </head>
-<body>
-    <h1><em>Home Exercises</em></h1>
+<body >
+    <h1><strong>Student Details</strong></h1>
 
-    <p><strong>My name is Madan H <Kbd></Kbd></strong></p>
+
+    <form>
+        <div>
+                <label for ="Fname" >First Name :</label>
+                <input type="text" id="Fname" placeholder="Jennifer" required>
+        </div>
+
+        <br>
+        <div>
+                <label for ="Lname" >Last Name :</label>
+                <input type="text" id="Lname" placeholder="Lawerence">
+        </div>
+
+        <br>
+        <div>
+
+            <label for="Birthday">Birthday:</label>
+            <input type="date" id="Birthday" name="Birthday" >
+           </div>
+           <br>
+
+         <div>
+            <label for="Gender">Gender:</label>
+         </div>
+
+         <div>
+            <label for="Male">Male:</label>
+            <input type="radio" id="Male" value="Gender" name="Gender">
+        
+            <label for="Female">Female:</label>
+            <input type="radio" id="Female" value="Female" name="Gender">
+         
+            <label for="Other">Other:</label>
+            <input type="radio" id="Other" value="Other" name="Gender">
+         </div>
+
+            <br>
+
+         <div> 
+            <label for="Age" > Age</label>
+            <select id="Age" name="Age">
+                <option>1-5</option>
+                <option>6-10</option>
+                <option>11-15</option>
+                <option>16-20</option>
+                <option>20 and Above</option>
+            </select>
+         </div>
+         <br>
+
+         <div>
+
+         <label for="Father name">Father Name</label>
+         <input type="text" id="Father name" name="Father Name" placeholder="Mr Jonathan Lawerence">
+        </div>
+            <br>
+        <div>
+
+            <label for="Mother name">Mother Name</label>
+            <input type="text" id="Mother name" name="Mother Name" placeholder="Ms Lawerence">
+           </div>
+           <br>
+           <div>
+
+            <input type="radio" id="Final" value="Final" ><label for="Final">I Agree to all the terms & Conditions</label>
+           </div>
+           
+
+
+        <br>
+        <input type="reset" >
+         <input type="submit">
+
+
+    </form>
     
 </body>
 </html>
